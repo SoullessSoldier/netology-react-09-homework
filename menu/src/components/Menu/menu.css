@@ -1,0 +1,27 @@
+.header {
+  margin: 20px 0 30px;
+}
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-block-color);
+}
+
+.menu__item {
+  padding: 20px 30px;
+  font-size: 1.1rem;
+  color: var(--link-color);
+  text-transform: uppercase;
+  border-bottom: 4px solid transparent;
+}
+
+.menu__item:hover {
+  color: var(--link-color-active);
+}
+
+.menu__item-active {
+  color: var(--link-color-active);
+  border-bottom-color: var(--link-color-underline);
+}

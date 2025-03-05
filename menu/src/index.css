@@ -1,0 +1,41 @@
+:root {
+  --bg-main-color: #260e26;
+  --bg-block-color: #361e36;
+  --link-color-active: #fafcff;
+  --link-color: #9d8f97;
+  --link-color-underline: #49b947;
+  --text-main-color:  #9d8f97;
+  --text-header-color: #fafcff;
+
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  min-width: 320px;
+  min-height: 97vh;
+  background-color: var(--bg-main-color);
+  color: var(--text-main-color)
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 850px;
+}
+

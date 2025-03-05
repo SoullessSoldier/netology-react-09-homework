@@ -1,0 +1,21 @@
+html {
+  scrollbar-gutter: stable;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin: 20px 0;
+  padding: 30px;
+  background-color: var(--bg-block-color);
+}
+
+.article__title {
+  margin-bottom: 20px;
+  color: var(--text-header-color);
+}
+.article__paragraph {
+  text-wrap: pretty;
+}

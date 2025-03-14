@@ -1,0 +1,70 @@
+:root {
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-text-gray: #97a6b1;
+  --color-text-black: #342e2c;
+  --color-text-blue: #3d5b99;
+  --color-text-white: #f0f0f0;
+
+  --color-gray-dark: #c5c5c5;
+  --color-bg-gray: #e9eaee;
+  --color-bg-gray-light: #f5f6f8;
+  --color-bg-white: #ffffff;
+  --color-bg-blue: #3d5b99;
+  --color-bg-red: #af4644;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+  width: 600px;
+}
+
+.bordered-box {
+  padding: 10px;
+  background-color: var(--color-bg-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-gray-dark);
+}
+
+.post-button {
+    min-width: 80px;
+  padding: 5px 8px;
+  text-align: center;
+  color: var(--color-text-white);
+  border-radius: 5px;
+  border: 1px solid var(--color-gray-dark);
+  cursor: pointer;
+}
+
+.post-button-blue {
+    background-color: var(--color-bg-blue);
+}
+
+.post-button-red {
+    background-color: var(--color-bg-red);
+}
+
+.button-close {
+  padding: 10px;
+  color: var(--color-text-gray);
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid transparent;
+}

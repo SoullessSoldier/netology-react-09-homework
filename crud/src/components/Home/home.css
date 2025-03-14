@@ -1,0 +1,17 @@
+.post-new {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.post-list {
+    margin: 10px 0;
+}
+.post-list-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+.post-link, 
+.post-link:active, 
+.post-link:hover, 
+.post-link:visited {
+    color: inherit;
+} 

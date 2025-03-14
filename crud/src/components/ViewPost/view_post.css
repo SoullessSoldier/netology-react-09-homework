@@ -1,0 +1,33 @@
+.view-post {
+    background-color: var(--color-bg-gray-light);
+}
+.post-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-header .post-title {
+    font-size: 1rem;
+}
+.post-body {
+  padding: 8px 0;
+  border-top: 1px solid var(--color-gray-dark);
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+.post-created {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-align: right;
+    font-style: italic;
+}
+
+.post-control-wrapper {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}

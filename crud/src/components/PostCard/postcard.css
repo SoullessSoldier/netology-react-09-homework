@@ -1,0 +1,53 @@
+.postcard {
+  padding: 8px;
+}
+.postcard-header {
+  margin-bottom: 8px;
+}
+.postcard-body {
+  padding: 8px 0;
+  border-top: 1px solid var(--color-gray-dark);
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+.postcard-created {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-align: right;
+    font-style: italic;
+}
+.postcard-footer-action-wrapper {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid var(--color-gray-dark);
+}
+.postcard-footer-action .fa {
+  margin-right: 10px;
+}
+.postcard-comment-form .form-control {
+    padding: 5px;
+}
+.postcard-comment-form .postcard-input-wrapper {
+    position: relative;
+    width: 100%;
+}
+.postcard-comment-form .postcard-input {
+    width: 100%;
+    padding: 5px 80px 5px 5px;
+}
+.postcard-input-attachment-wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.postcard-input-attachment-wrapper .fa {
+    color: var(--color-text-gray)
+}

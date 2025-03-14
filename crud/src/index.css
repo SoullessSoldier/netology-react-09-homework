@@ -1,0 +1,10 @@
+@import "@/assets/styles/default.css";
+
+body {
+  min-width: 320px;
+  min-height: 97vh;
+  background-color: var(--color-bg-gray);
+  color: var(--color-text-black)
+}
+
+

@@ -1,0 +1,31 @@
+.edit-post {
+    background-color: var(--color-bg-gray-light);
+}
+
+.edit-post-header {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-post-header .post-title {
+    font-size: 1rem;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.edit-post-text {
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+    resize: none;
+}
+
+.form-control.button-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

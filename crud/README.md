@@ -188,4 +188,8 @@ DELETE /posts/:id
 Скринкаст функционала
 
 
+https://github.com/user-attachments/assets/163b5214-52f8-442a-a28a-82e3e094f228
+
+
+
 [Вверх](#top)

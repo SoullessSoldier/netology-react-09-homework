@@ -1,0 +1,21 @@
+.news-card {
+  width: 400px;
+}
+.news-card-img {
+  min-height: 100px;
+  height: auto;
+  background-color: var(--color-bg-main);
+  object-fit: cover;
+}
+.news-card-body {
+  display: flex;
+  flex-direction: column;  
+}
+.news-card-title {
+    text-transform: uppercase;
+}
+.news-card-text {
+  flex: 1;
+  text-wrap: pretty;
+  text-indent: 15px;  
+}

@@ -1,6 +1,8 @@
 import { useContext, useState } from "react";
 import { AuthContext } from "@/contexts/AuthProvider";
 import { useNavigate } from "react-router-dom";
+import Logo from "@/components/Logo/Logo";
+import "./login_form.css"
 
 const LoginForm = () => {
   const { login } = useContext(AuthContext);
@@ -23,27 +25,36 @@ const LoginForm = () => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor="username">Имя пользователя:</label>
-      <input
-        type="text"
-        id="username"
-        value={username}
-        onChange={(e) => setUsername(e.target.value)}
-      />
+    <div className="login-form-wrapper">
+      <Logo />
+      <form onSubmit={handleSubmit} className="login-form">
+        <div>
+          <input
+            type="text"
+            className={"form-control"}
+            id="username"
+            value={username}
+            placeholder="Имя пользователя"
+            onChange={(e) => setUsername(e.target.value)}
+          />
+        </div>
+        <div>
+          <input
+            type="password"
+            className={"form-control"}
+            id="password"
+            value={password}
+            placeholder="Пароль"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
 
-      <label htmlFor="password">Пароль:</label>
-      <input
-        type="password"
-        id="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-
-      {errorMessage && <p style={{ color: "red" }}>{errorMessage}</p>}
-
-      <button type="submit">Войти</button>
-    </form>
+        <button type="submit" className="btn btn-outline-success">
+          Войти
+        </button>
+      </form>
+    </div>
   );
 };
 

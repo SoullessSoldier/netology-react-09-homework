@@ -9,6 +9,9 @@ const fetchProfile = async (token) => {
     const data = await response.json();
     return data;
   }
+  if (response.status === 401) {
+    throw new Error("Unauthorized")
+  }
   return {};
 };
 
@@ -25,8 +28,8 @@ const postAuth = async (payload) => {
   return null;
 };
 
-const fetchNews = async (token) => {
-  const url = backendUrls.news;
+const fetchNews = async (token, id=null) => {
+  const url = id ? backendUrls.news + `/${id}` : backendUrls.news;
   const bearer = `Bearer ${token}`;
   const headers = { Authorization: bearer };
   const response = await fetch(url, { headers });
@@ -34,7 +37,11 @@ const fetchNews = async (token) => {
     const data = await response.json();
     return data;
   }
+  if (response.status === 401) {
+    throw new Error("Unauthorized");
+  }
   return [];
 };
+
 
 export { fetchProfile, postAuth, fetchNews };

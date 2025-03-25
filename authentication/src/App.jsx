@@ -6,6 +6,7 @@ import NotFound from "@/components/NotFound/NotFound";
 import ProtectedRoute from "@/routes/ProtectedRoute";
 import AuthProvider from "@/contexts/AuthProvider";
 import Layout from "@/pages/Layout";
+import "./App.css";
 
 function App() {
   return (
@@ -30,8 +31,8 @@ function App() {
                 </ProtectedRoute>
               }
             />
+            <Route path="*" element={<NotFound />} />
           </Route>
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     </AuthProvider>

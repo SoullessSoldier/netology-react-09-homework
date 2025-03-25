@@ -42,26 +42,30 @@ const news = [
   {
     id: uuid.v4(),
     title: faker.lorem.words(),
-    image: "https://placeimg.com/640/480/nature",
-    content: faker.lorem.paragraph(),
+    // image: "https://placeimg.com/640/480/nature",
+    image: "https://picsum.photos/300/200?nature",
+    content: faker.lorem.paragraph(10),
   },
   {
     id: uuid.v4(),
     title: faker.lorem.words(),
-    image: "https://placeimg.com/640/480/arch",
-    content: faker.lorem.paragraph(),
+    // image: "https://placeimg.com/640/480/arch",
+    image: "https://picsum.photos/300/200?arch",
+    content: faker.lorem.paragraph(10),
   },
   {
     id: uuid.v4(),
     title: faker.lorem.words(),
-    image: "https://placeimg.com/640/480/tech",
-    content: faker.lorem.paragraph(),
+    // image: "https://placeimg.com/640/480/tech",
+    image: "https://picsum.photos/300/200?tech",
+    content: faker.lorem.paragraph(10),
   },
   {
     id: uuid.v4(),
     title: faker.lorem.words(),
-    image: "https://placeimg.com/640/480/sepia",
-    content: faker.lorem.paragraph(),
+    // image: "https://placeimg.com/640/480/sepia",
+    image: "https://picsum.photos/300/200?sepia",
+    content: faker.lorem.paragraph(10),
   },
 ];
 
